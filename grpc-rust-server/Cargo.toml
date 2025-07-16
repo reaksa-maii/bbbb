@@ -1,0 +1,19 @@
+[package]
+name = "grpc-rust-server"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tonic = "0.9"
+prost = "0.11"
+bytes = "1.6"
+tokio-stream = "0.1"
+
+[build-dependencies]
+tonic-build = "0.9"
+
+[[bin]]
+name = "grpc-rust-server"
+path = "src/server.rs"

@@ -1,0 +1,16 @@
+edition = "2023";
+
+package book;
+
+service GetBook(){
+    rpc return (GetBookOne)
+}
+service PostBook(){
+    rpc return(BookRequest)
+}
+message GetBookOne{
+    returns string 1;
+}
+message BookRequest(){
+    string id = 1;
+}
