@@ -30,13 +30,13 @@ void main() {
     });
     test('compression flag 0 with grpc-encoding identity', () {
       final rawPayload = <int>[1, 2, 3, 4];
-      final Codec codec = IdentityCodec();
+      final codec = IdentityCodec();
       final data = frame(rawPayload, codec);
       expect(data[0], 0);
     });
     test('compression flag 1 with grpc-encoding gzip', () {
       final rawPayload = <int>[1, 2, 3, 4];
-      final Codec codec = GzipCodec();
+      final codec = GzipCodec();
       final data = frame(rawPayload, codec);
       expect(data[0], 1);
     });
