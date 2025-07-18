@@ -1,5 +1,0 @@
-syntax = "proto3";
-
-package grpc.gateway.one.digital
-
-option gateway_package = "github.com/bbbb/grpc.gateway.one.digital.v2";
