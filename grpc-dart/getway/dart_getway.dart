@@ -1,12 +1,4 @@
-import 'package:grpc/grpc.dart';
-
-class DartGetway {
-  final getway = GrpcData();
-  DartGetway() {
-    print(getway.runtimeType);
-  }
-}
-
 void main() {
-  DartGetway();
+  print('Hello, Dart Gateway!');
+  // This is where the Dart Gateway logic will be implemented.
 } 
